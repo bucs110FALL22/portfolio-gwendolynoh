@@ -15,4 +15,5 @@ for i in range(3):
     print("Too High")
   if guess == number:
     print("correct!!")
+    break 
     
