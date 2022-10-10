@@ -1,26 +1,39 @@
 import turtle
-import random
+import random 
+ 
+t = turtle.Turtle()
+t.shape("turtle")
+wn = turtle.Screen()
 
-pygame.init()
-screen = pygame.display.set_mode()
 
-width, height = pygame.display.get_window_size()
+t.shape('turtle')
+distance = 10
+angle = (90)
+in_screen = True
 
-  
-myturtle = turtle.Turtle()
-myturtle.shape("turtle")
+while in_screen:
+  coin = random.randrange(0,2)
+  if coin == 0:
+    t.left(angle)
+  else:
+    t.right(angle)
+  t.forward(distance)
 
-window = turtle.Screen()
+  turtlex = t.xcor()
+  turtley = t.ycor()
 
-myturtle.goto(0,0)
+  x_range = wn.window_width()/2
+  y_range = wn.window_height()/2
 
-guess = range("heads","false")
-random.choice(guess)
+  if abs(turtlex) > x_range or abs(turtley) > y_range:
+    in_screen = False
 
-while i in range(random.choice(guess)):
-  if i == "heads"
-  myturtle.right(90)
-elif i == "tails"
-  myturtle.left(90)
+wn.bgcolor("light blue")
+wn.exitonclick()
+
+
+
+
+
 
 
