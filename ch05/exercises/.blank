@@ -1,0 +1,11 @@
+number = [x]
+remainder = (number % 2)
+while number < 102:
+  print(number)
+  number = number + 1
+  if (remainder == 0):
+    print(number/2)
+  else:
+    print((number * 3) + 1)
+  if (number == 1):
+    print("Sequence terminated")

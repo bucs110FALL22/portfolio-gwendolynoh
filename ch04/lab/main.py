@@ -115,7 +115,7 @@ for n in range(10):
       pygame.draw.circle(window,player,coord,10)
       if player is players[0]:
           red_score += 1
-      if player is player[1]:
+      if player is players[1]:
           blue_score += 1
       pygame.display.flip()
       pygame.time.wait(500)
