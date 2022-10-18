@@ -157,3 +157,4 @@ if Guess is playerchoice:
 else: 
   print("you're wrong")
 pygame.time.wait(1000)
+

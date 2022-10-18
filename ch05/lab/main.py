@@ -48,23 +48,34 @@ print (list)
 
 # Part C
 pygame.display.init()
-screen_width = 500
-screen_height = 500
-window = pygame.display.set_mode([screen_width,screen_height])
+window = pygame.display.set_mode()
 
-
+#Font on display 
+pygame.font.init()
 font = pygame.font.Font(None,50)
+
+# Variables 
 upper_limits = 20 
 iters = {}
 max_so_far = 0 
-max_val = 
+max_val = 0
 scale = 5
 
 for start in range(2,upper_limit + 1):
+  window.fill("black")
   count = 0
   while (x != 1):
     if x % 2 == 0:
       x = x//2
     else:
-      x = (3 * x) + 1 
+      x = (3 * x) + 1
     count = count + 1
+    d = {x : count}
+    iters.item(d)
+    start.append(x)
+    
+coords = [indefinite_interation(x),count]
+pygame.draw.lines(window, "white", False, coords)
+new_display = pygame.transfor.flip(window, False, True)
+pygame.display.blit(new_display, (0,0))
+window.display.flip()
