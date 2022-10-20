@@ -1,39 +1,26 @@
-def percentage_to_letter(score = 0):
-    if score >= 90:
-      return True 
-    elif score <= 90 and score >= 80:
-      return True
-    elif score <= 80 and score >=70:
-      return True 
-    elif score <=70 and score >=60:
-      return True 
-    elif score <60:
-      return True 
-score = int(input("What is your score?:"))
-print(percentage_to_letter(score))
+def percentage_to_letter(score):
+  if score >= 90:
+    letter = "A"
+  elif 90> score >=80:
+    letter = "B"
+  elif 80> score >=70:
+    letter = "C"
+  elif 70> score >=60:
+    letter = "D"
+  elif 60>= score:
+    letter = "F"
+  return letter
 
-#A = score >= 90
-#B = score <= 90 or score >= 80
-#C = score <= 80 or score >=70
-#D = score <=70 or score >=60
-#F = score <60
-
-def is_passing(letter=None):
-  return percentage_to_letter(score)
-  if letter == A: 
-    print("You passed")
-    return letter 
-  if letter == B: 
-    print("You passed")
-    return letter 
-  if letter == C: 
-    print("You passed")
-    return letter
-  if letter == D:
-    print("You failed")
-    return letter 
-  if letter == F: 
-    print("You failed")
-    return letter
-letter = percentage_to_letter(score)
+def is_passing(letter):
+  if letter == "A":
+    return True 
+  if letter == "B":
+    return True 
+  if letter == "C":
+    return True 
+  else:
+    return False
+  return letter in "ABC"
 print(is_passing(letter))
+
+score = int(intput(percentage_to_letter("What is your score?")))
