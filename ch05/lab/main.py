@@ -1,6 +1,5 @@
 import pygame 
 
-
 #Part A 
 x = 101
 def indefinite_interation(x):
