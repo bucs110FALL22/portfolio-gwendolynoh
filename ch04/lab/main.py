@@ -58,8 +58,8 @@ pygame.time.wait(1000)
 #Part C
 window.fill("black")
 playerChoice = ""
-leftrect = pygame.Rect(0,0,x/2,y)
-rightrect = pygame.Rect(x/2,0,x/2,y)
+leftrect = pygame.Rect(0 , 0, x/2, y)
+rightrect = pygame.Rect(x/2, 0 , x/2 , y)
 redteam = pygame.draw.rect(window ,"red",leftrect)
 blueteam = pygame.draw.rect(window ,"blue",rightrect)
 pygame.display.flip()
