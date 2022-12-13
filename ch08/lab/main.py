@@ -1,4 +1,4 @@
-from test import StringUtility
+from StringUtility import StringUtility
 
 
 # Provided main() calls your class methods with interesting inputs,
